@@ -1,0 +1,10 @@
+job_name: compare-agents
+n_concurrent_trials: 9
+
+agents:
+  - name: oracle
+  - name: nop
+  - import_path: agents.scripted_agent:ScriptedAgent
+
+datasets:
+  - path: forward-pass-bench

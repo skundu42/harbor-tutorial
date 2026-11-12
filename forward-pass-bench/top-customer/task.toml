@@ -1,0 +1,12 @@
+schema_version = "1.4"
+artifacts = ["/app/query.sql"]
+
+[task]
+name = "forward-pass/top-customer"
+
+[agent]
+timeout_sec = 300.0
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "separate"
